@@ -1,1 +1,1 @@
-# EyeCane---Device-for-Assisting-People-with-Visual-Disabilities
+# EyeCane- Device for Assisting People with Visual Disabilities
