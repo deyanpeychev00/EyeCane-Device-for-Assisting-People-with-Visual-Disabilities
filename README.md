@@ -1,4 +1,4 @@
-# ![stack Overflow](http://lmsotfy.com/so.png) EyeCane - Device for Assisting People with Visual Disabilities
+# ![stack Overflow](http://imgur.com/sdIrwh1) EyeCane - Device for Assisting People with Visual Disabilities
 
 The aim of this project is to help people with visual disabilities and facilitate their daily lives.
  
