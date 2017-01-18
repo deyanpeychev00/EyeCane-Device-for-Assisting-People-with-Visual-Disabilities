@@ -1,4 +1,5 @@
-# ![EyeCane Logo](http://i.imgur.com/sdIrwh1.png) EyeCane - Device for Assisting People with Visual Disabilities
+# ![EyeCane Logo](http://i.imgur.com/sdIrwh1.png) 
+# EyeCane - Device for Assisting People with Visual Disabilities
 
 The aim of this project is to help people with visual disabilities and facilitate their daily lives.
  
