@@ -1,4 +1,4 @@
-# ![EyeCane Logo](C:\Users\STIL.USER-PC\Desktop\Deyan\EyeCane - устройство за подпомагане на хора с увредено зрение\EyeCane - устройство за подпомагане на хора с увредено зрение\EyeCane Logos\1.png) 
+# ![EyeCane Logo](blob:http://imgur.com/af511f54-8b99-4614-99c5-fbb232b504b4) 
 # EyeCane - Device for Assisting People with Visual Disabilities
 
 The aim of this project is to help people with visual disabilities and facilitate their daily lives.
