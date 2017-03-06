@@ -65,8 +65,9 @@ void loop()
   else{
     finalDistance = distanceHorizontal;
   }
-
-  if (finalDistance<=100){  /* Setting sound and vibration indication depending on the shortest measured distance from both sensors*/
+  
+  /* Setting sound and vibration indication depending on the shortest measured distance from both sensors*/
+  if (finalDistance<=100){ /* Indications start if the shortest distance is less than 1m. (100cm.) */
     if (finalDistance<20){
       finalDistance=20; 
     }
