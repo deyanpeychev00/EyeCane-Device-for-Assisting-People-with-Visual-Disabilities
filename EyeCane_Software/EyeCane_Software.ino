@@ -1,11 +1,15 @@
-#define trigPin 3
-#define echoPin 5
+#define trigPinHorizontal 3
+#define echoPinHorizontal 5
+#define trigPinVertical 4
+#define echoPinVertical 6
 #define alarm 7
 #define motor 9
 void setup()
 { 
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
+  pinMode(trigPinHorizontal, OUTPUT);
+  pinMode(echoPinHorizontal, INPUT);
+  pinMode(trigPinVertical, OUTPUT);
+  pinMode(echoPinVertical, INPUT);
   pinMode(alarm, OUTPUT);
   pinMode(motor, OUTPUT); 
 
@@ -35,24 +39,41 @@ void setup()
 }
 void loop()
 { 
-  long duration, distance;
-  digitalWrite(trigPin, LOW); 
+  long durationHorizontal, distanceHorizontal, durationVertical, distanceVertical, finalDistance;
+
+  /* sending signals from horizontal sensor */
+  digitalWrite(trigPinHorizontal, LOW); 
   delayMicroseconds(2); 
-  digitalWrite(trigPin, HIGH);
+  digitalWrite(trigPinHorizontal, HIGH);
   delayMicroseconds(10); 
-  digitalWrite(trigPin, LOW);
+  digitalWrite(trigPinHorizontal, LOW);
+  durationHorizontal = pulseIn(echoPinHorizontal, HIGH); /* Calculating the time of distance measurement from horizontal sensor [us] */
+  distanceHorizontal = (durationHorizontal/2.0)*(343/10000.0); /* Distance calculation [cm] using speed of sound in air = 343 m/s */
+ 
+  /* sending signals from vertical sensor */
+  digitalWrite(trigPinVertical, LOW); 
+  delayMicroseconds(2); 
+  digitalWrite(trigPinVertical, HIGH);
+  delayMicroseconds(10); 
+  digitalWrite(trigPinVertical, LOW);
+  durationVertical = pulseIn(echoPinVertical, HIGH); /* Calculating the time of distance measurement from vertical sensor[us] */
+  distanceVertical = (durationVertical/2.0)*(343/10000.0); /* Distance calculation [cm] using speed of sound in air = 343 m/s */
 
-  duration = pulseIn(echoPin, HIGH); /* Calculating the time of distance measurement [us] */
-  distance = (duration/2)*(343/10000); /* Distance calculation [cm] using speed of sound in air = 343 m/s */
+  if(distanceVertical < distanceHorizontal){ /* getting the shorter distance measured by horizontal and vertical sensors */
+    finalDistance = distanceVertical;
+  }
+  else{
+    finalDistance = distanceHorizontal;
+  }
 
-  if (distance<=100){  /* Setting sound and vibration indication depending on the measured distance */
-    if (distance<20){
-      distance=20; 
+  if (finalDistance<=100){  /* Setting sound and vibration indication depending on the shortest measured distance from both sensors*/
+    if (finalDistance<20){
+      finalDistance=20; 
     }
     digitalWrite(alarm,LOW); // Sound indication
     delay(2);
     digitalWrite(alarm,HIGH);
-    delay(distance*3.5);
+    delay(finalDistance*3.5);
 
     digitalWrite(motor, HIGH); // Vibration indication
     delay (50);
