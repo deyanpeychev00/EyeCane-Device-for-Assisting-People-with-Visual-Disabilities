@@ -84,7 +84,7 @@ A portable battery with a capacity of 2600mAh is used to power the device, which
 
 ### Functional Scheme of the Device
 
-# ![Functional Scheme of the Device](https://imgur.com/a/hFxuZ) 
+# ![Functional Scheme of the Device](https://ibb.co/d4PX2a) 
 
 ## 05. Pictures of the Device and 'How it Works'
 The finished device is extremely easy to use. It is started by switching the CC switch, mounted on the device box itself. A second switch is used to turn the sound module on / off so that the sound does not annoy people around the user when the device is used indoors.
