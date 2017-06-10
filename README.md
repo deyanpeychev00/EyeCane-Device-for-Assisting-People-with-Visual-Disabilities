@@ -98,7 +98,7 @@ The finished device is extremely easy to use. It is started by switching the CC 
 ### How it Works:
 The way the device works is described in the following illustration:
 
-# ![How it Works](https://imgur.com/a/PD1bY)
+# ![How it Works](http://i64.tinypic.com/rayf7b.png)
 
 ## 05. Conclusion
 The aim of the project is to make a device for helping people with impaired vision.
