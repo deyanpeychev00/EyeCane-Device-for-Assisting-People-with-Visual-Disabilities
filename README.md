@@ -100,7 +100,7 @@ The way the device works is described in the following illustration:
 
 # ![How it Works](http://i64.tinypic.com/rayf7b.png)
 
-## 05. Conclusion
+## 06. Conclusion
 The aim of the project is to make a device for helping people with impaired vision.
 The goal is achieved using an Arduino microcontroller with specialized software written in the C / C ++ language. Facility signals in front of the device are received by an ultrasonic remote sensor and are supplied to the user via vibration and acoustic indications via a vibration motor and an alarm module.
 
