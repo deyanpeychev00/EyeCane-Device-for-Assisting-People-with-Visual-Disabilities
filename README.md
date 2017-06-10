@@ -93,7 +93,7 @@ The finished device is extremely easy to use. It is started by switching the CC 
 
 # ![Pictures of the Finished Device](http://i63.tinypic.com/r9pt1l.png) 
 
-When the battery is drained, the cane is disassembled from the handle and the battery is charged via a USB charger as described above.
+>When the battery is drained, the cane is disassembled from the handle and the battery is charged via a USB charger as described above.
 
 ### How it Works:
 The way the device works is described in the following illustration:
@@ -104,26 +104,26 @@ The way the device works is described in the following illustration:
 The aim of the project is to make a device for helping people with impaired vision.
 The goal is achieved using an Arduino microcontroller with specialized software written in the C / C ++ language. Facility signals in front of the device are received by an ultrasonic remote sensor and are supplied to the user via vibration and acoustic indications via a vibration motor and an alarm module.
 
-### Main advantages of the device:
+### Main Advantages of the Device:
 + Such solutions offered on the market are without optimization and at a costly price, unlike the proposed solution, which is at a price not higher than BGN 50.
 
 + Functionality gathered in a compact, rugged and easy-to-use device.
 
 + Open source software that enables user optimization not only at the hardware but also at the software level.
 
-### Future developments
+### Future Developments
 + Create real-time tracking software.
 
 + Add an ultrasonic device to expel street dogs.
 
 + Add a low battery indication.
 
-### Assistive devices used
+### Assistive Devices Used
 The programming environment used in the implementation of the project is:
 
 + [Arduino IDE - C / C ++ (free)](https://www.arduino.cc/).
 
-### The literature used in the implementation of the project is:
+### The Literature Used in the Implementation of the Project is:
 + [https://www.arduino.cc/](https://www.arduino.cc/)
 
 + [http://tinkbox.ph/sites/mytinkbox.com/files/downloads/US_100_ULTRASONIC_SENSOR_MODULE.pdf](http://tinkbox.ph/sites/mytinkbox.com/files/downloads/US_100_ULTRASONIC_SENSOR_MODULE.pdf)
