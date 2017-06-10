@@ -11,7 +11,7 @@ This device can help people with visual disabilities to become more independent 
 ## 01. Project Goals
 
 ### The project goals are:
-⋅⋅⋅Creating a cheap, functional, easy-to-use and accessible to the end-user product.
++ Creating a cheap, functional, easy-to-use and accessible to the end-user product.
 
 ⋅⋅⋅Maintain the compactness and strength of the product.
 
